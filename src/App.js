@@ -35,7 +35,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HelloWorld1 />} />
-        <Route exact path="/helloworld" element={<HelloWorld1 /> } />
+        <Route exact path="/helloworld1" element={<HelloWorld1 /> } />
         <Route exact path="/helloworld2" element={<HelloWorld2/>} />
       </Routes>
     </BrowserRouter>
