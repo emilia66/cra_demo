@@ -2,12 +2,12 @@ const getNow = () => (performance.now ? performance.now() : Number(new Date()));
 
 
 const polling = (
-  pollPromiseFn,
+  pollPromiseFn:any,
   time = 1000,
   { immediately = false, max = 20 } = {},
 ) => {
   let index = 1;
-  let timmer;
+  let timmer:any;
   let stop = false;
   const innerFn = async () => {
     try {

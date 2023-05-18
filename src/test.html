@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Particle Background</title>
+  <!-- <link rel="stylesheet" href="https://unpkg.com/particle-bg@^2.0.1/dist/particle-bg.css"> -->
+</head>
+
+<body>
+  <div id="particle-container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/particle-bg/dist/particle.min.js"></script>
+  <script>
+    // 获取容器元素
+    var container = document.getElementById('particle-container');
+
+    // 初始化粒子背景
+    var particleBg = new ParticleNetwork(container, {
+      density: 10000,
+      velocity: 1
+    });
+
+    // 启动粒子背景
+    window.addEventListener('load', () => {
+      particleBg.start();
+    });
+  </script>
+</body>
+
+</html>
